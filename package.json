@@ -1,0 +1,35 @@
+{
+  "name": "trade_mvc",
+  "version": "1.0.0",
+  "description": "The trade project made using the mvc model.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NadiaNajjar-CCI/trade_project-sdiagne0.git"
+  },
+  "author": "Samba Diagne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NadiaNajjar-CCI/trade_project-sdiagne0/issues"
+  },
+  "homepage": "https://github.com/NadiaNajjar-CCI/trade_project-sdiagne0#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^5.1.0",
+    "ejs": "^3.1.9",
+    "express": "^4.19.2",
+    "express-rate-limit": "^6.11.2",
+    "express-session": "^1.18.0",
+    "express-validator": "^7.0.1",
+    "luxon": "^3.3.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^7.6.11",
+    "morgan": "^1.10.0",
+    "uuid": "^9.0.0"
+  }
+}

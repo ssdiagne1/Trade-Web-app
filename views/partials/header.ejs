@@ -1,0 +1,57 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        
+        <header >
+            <a href="/"> <img class= "logo" src="/images/tradingLogo.png" alt="logo" width="64" height="64"></a>
+            <nav class="side_nav">
+            <ul>
+                <li><a href="/trades/new">Start Trading ->></a></li>
+                <%if(!user){%>
+                    <li><a href="/users/login">Login</a></li>
+                    <li>|</li>
+                    <li><a href="/users/new">Sign Up</a></li>
+                    <li>|</li>
+                <% }else{%>
+                <li><a href="/users/profile">Profile</a></li>
+                <li>|</li>
+                <li><a href="/users/logout">Logout</a></li>
+                <%}%>
+                
+            </ul>
+            </nav>
+        </header>
+        <nav class="gen_nav">
+            <hr>
+            <ul>
+                <li><a href="/trades">Trades</a></li>
+                <li><a href="/trades/about">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+         </nav>
+
+         <% if(errorMessages.length > 0) {%>
+            <% errorMessages.forEach(message=>{%>
+                <div class='error'>
+                    <%=message%>
+                </div>
+                <%});%>
+                    <%}%>
+        
+                        <% if(successMessages.length > 0) {%>
+        
+                            <% successMessages.forEach(message=>{%>
+                                <div class='success'>
+                                    <%=message%>
+                                </div>
+                                <%});%>
+                                    <%}%>
+
+

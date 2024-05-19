@@ -1,0 +1,28 @@
+<%- include('../partials/header.ejs')%>
+<div class = "content">
+    <form action="/trades/<%=trade.id%>?_method=PUT" method="post">
+        <table>
+            <tr>
+                <td><label for="title" >Title</label></td>
+                <td><input type="text" id="title" name="title" value = "<%= trade.title%>" class = "fixed-width" required></td>
+            </tr>
+            <tr><td class = "align-top"><label for="detail">Detail</label></td>
+                <td><textarea rows="5" id="detail" name="detail" class = "fixed-width" required minlength="10"><%= trade.detail%></textarea></td>
+            </tr>
+            <tr><td class = "align-top"><label for="category">Category</label></td>
+                <td><textarea rows="5" id="category" name="category" class = "fixed-width" required><%= trade.category%></textarea></td>
+            </tr>
+            <tr><td class = "align-top"><label for="status">Status</label></td>
+                <td><textarea rows="5" id="status" name="status" class = "fixed-width" required><%= trade.status%></textarea></td>
+            </tr>
+            <tr><td class = "align-top"><label for="image">Choose an image</label></td>
+                <td><input type="file" id="image" name="image" accept="image/png, image/jpeg"><%= trade.image%></td>
+            </tr>
+            <tr>
+                <td colspan="2" class = "align-right"><button>Update</button></td>
+            </tr>
+        </table>          
+    </form>
+
+    </div>
+    <%- include('../partials/footer.ejs')%>

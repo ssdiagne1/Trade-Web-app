@@ -1,0 +1,35 @@
+[{
+  "_id": {
+    "$oid": "645c6134211627558fb01fe6"
+  },
+  "userId": {
+    "$oid": "645948f1817cf19d9aeebaf7"
+  },
+  "title": "Ford Fusion 2021",
+  "category": "Sedan",
+  "status": "available",
+  "createdAt": {
+    "$date": "2023-05-11T03:29:56.810Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T03:29:56.810Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645c62a114a812b2ea6fedca"
+  },
+  "userId": {
+    "$oid": "645948f1817cf19d9aeebaf7"
+  },
+  "title": "2020 Mercedes AMG GLE",
+  "category": "SUV",
+  "status": "available",
+  "createdAt": {
+    "$date": "2023-05-11T03:36:01.674Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T03:36:01.674Z"
+  },
+  "__v": 0
+}]

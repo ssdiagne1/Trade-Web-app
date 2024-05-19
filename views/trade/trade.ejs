@@ -1,0 +1,30 @@
+<%- include('../partials/header.ejs')%>
+<div class="content">
+    <img src="/images/<%=trade.image%>" width='200' height='150'>
+        
+    <h5><%=trade.status%></h5>
+    <p><%=trade.detail%><p>
+    <%if(trade.author){%>
+        <b><p>By <%=trade.author.firstName +" "+ trade.author.lastName%> </p>  </b>
+    <%}%> 
+    <br>
+
+    <%if(user != trade.author._id){ %>  
+        <div class="btn-wrapper">
+            <form>
+                <button type="submit" class="btn btn-watch" formmethod = "GET" formaction="/trades/<%=trade.id%>">Watch</button>
+                <button type="submit" class="btn btn-trade">Trade</button>
+            </form>
+        </div>
+             
+    <%}%>        
+
+    <%if(user == trade.author._id){%>
+        <form>
+            <button style="margin-left: 200px;width: 75px;" type = "submit" formmethod = "GET" formaction = "/trades/<%=trade.id%>/edit">Edit</button>
+            <button type = "submit" style="width: 75px;" formmethod = "POST" formaction = "/trades/<%=trade.id%>?_method=DELETE">Delete</button>
+        </form>
+    <%}%>
+    </div>
+    <%- include('../partials/footer.ejs')%>
+

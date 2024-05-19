@@ -1,0 +1,210 @@
+[{
+  "_id": {
+    "$oid": "6446ef54c98f5b65393d5361"
+  },
+  "title": "Ford Fusion 2020",
+  "category": "Sedan",
+  "detail": "2020, engine: 5.0L V8, transmission: 10-speed automatic, horsepower: 460 ",
+  "status": "available",
+  "image": "FordFusion2020.png",
+  "author": {
+    "$oid": "6446eaddb0ed7a3f3c14ca60"
+  },
+  "createdAt": {
+    "$date": "2023-04-24T21:06:28.235Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-24T21:06:28.235Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6446f056c98f5b65393d5376"
+  },
+  "title": "Audi TT 2016",
+  "category": "Convertible",
+  "detail": " 2016, engine: 5.0L V8, transmission: 10-speed automatic, horsepower: 460.",
+  "status": "unavailable",
+  "image": "2016AudiTT.png",
+  "author": {
+    "$oid": "6446eaddb0ed7a3f3c14ca60"
+  },
+  "createdAt": {
+    "$date": "2023-04-24T21:10:46.252Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-24T21:10:46.252Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6447009a921bc1a0cedd8210"
+  },
+  "title": "2019 Buick cascada",
+  "category": "Convertible",
+  "detail": "2019, engine: 2.0L 4-cylinder, transmission: 8-speed automatic, horsepower: 248 ",
+  "status": "available",
+  "image": "2019BuickCascada.png",
+  "author": {
+    "$oid": "64470041921bc1a0cedd8205"
+  },
+  "createdAt": {
+    "$date": "2023-04-24T22:20:10.982Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-24T22:20:10.982Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644700f0921bc1a0cedd821a"
+  },
+  "title": "Ford escape 2019",
+  "category": "SUV",
+  "detail": "Strong car very durable engine 5.6L 250 hourse power. XXL LTE",
+  "status": "available",
+  "image": "toyotaRAV42018.png",
+  "author": {
+    "$oid": "64470041921bc1a0cedd8205"
+  },
+  "createdAt": {
+    "$date": "2023-04-24T22:21:36.244Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-24T22:21:36.244Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644705341ecdc7fa83992d45"
+  },
+  "title": "2020 Mercedes AMG GLE",
+  "category": "SUV",
+  "detail": "Strong muscular car 500 HOURSEPOWER 4WD LIMITED EDITION CLASSIC PREMIUM",
+  "status": "available",
+  "image": "2018MercedesGLE.png",
+  "author": {
+    "$oid": "64470041921bc1a0cedd8205"
+  },
+  "createdAt": {
+    "$date": "2023-04-24T22:39:48.440Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-24T22:39:48.440Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6448700f0e248b7afd6fd1a2"
+  },
+  "title": "2019 Toyota Camry LXE",
+  "category": "Sedan",
+  "detail": "The five-seat Toyota Camry is a bestselling mid-size sedan with a standard 203-horsepower, 2.5-liter four-cylinder engine and an available 301-hp, 3.5-liter V-6. Both engines work with an eight-speed automatic transmission. A hybrid model that gets up to 52 mpg combined is also available.",
+  "status": "available",
+  "image": "2019ToyotaCamry.png",
+  "author": {
+    "$oid": "644724769bad7b5a61f4cad2"
+  },
+  "createdAt": {
+    "$date": "2023-04-26T00:27:59.408Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-26T00:28:27.375Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644870bc0e248b7afd6fd1b8"
+  },
+  "title": "Chevrolet Malibu 2020",
+  "category": "Sedan",
+  "detail": "The Malibu is Chevrolet's mid-size family sedan, which seats up to five. Power comes from a standard 160-horsepower, turbocharged 1.5-liter four-cylinder engine or an optional 250-hp, turbo 2.0-liter. The Malibu competes with mid-size cars such as the Ford Fusion, Honda Accord and Toyota Camry.",
+  "status": "available",
+  "image": "ChevroletMalibu2022.png",
+  "author": {
+    "$oid": "644724769bad7b5a61f4cad2"
+  },
+  "createdAt": {
+    "$date": "2023-04-26T00:30:52.539Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-26T00:30:52.539Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644871400e248b7afd6fd1c8"
+  },
+  "title": "2020 Cadillac Escalade",
+  "category": "SUV",
+  "detail": "The Escalade's standard V-8 engine cranks out 420 hp and 460 lb-ft of torque. In our First Test of the current-gen Escalade ESV with a six-speed auto.",
+  "status": "unavailable",
+  "image": "2020CadillacEscalade.png",
+  "author": {
+    "$oid": "644724769bad7b5a61f4cad2"
+  },
+  "createdAt": {
+    "$date": "2023-04-26T00:33:04.282Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-26T00:33:04.282Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6448726c0e248b7afd6fd1e9"
+  },
+  "title": "2015 Mercedes SLK ",
+  "category": "Convertible",
+  "detail": "The compact 2015 Mercedes-Benz SLK-Class is a standout luxury convertible that offers retractable-hardtop convenience and rewarding performance.",
+  "status": "unavailable",
+  "image": "2015MercedesSLK.png",
+  "author": {
+    "$oid": "64470041921bc1a0cedd8205"
+  },
+  "createdAt": {
+    "$date": "2023-04-26T00:38:04.200Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-26T00:38:04.200Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644873300e248b7afd6fd1ef"
+  },
+  "title": "Honda Accord 2016",
+  "category": "Sedan",
+  "detail": "The lineup starts with a 192-hp turbocharged 1.5-liter inline-four, but our favorite is the 252-hp turbocharged 2.0-liter inline-four that sits atop the engine",
+  "status": "available",
+  "image": "hondaAccord2016.png",
+  "author": {
+    "$oid": "64470041921bc1a0cedd8205"
+  },
+  "createdAt": {
+    "$date": "2023-04-26T00:41:20.069Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-26T00:41:20.069Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644873d70e248b7afd6fd1f7"
+  },
+  "title": "Escalade Cadillac 2020",
+  "category": "SUV",
+  "detail": "CADILLAC ESCALADE/ESCALADE ESV - 2020 ; Type: 6.2L V-8 VVT DI with Active Fuel Management ; Bore & Stroke (in / mm):. 4.06 x 3.62 / 103.25 x 92.",
+  "status": "available",
+  "image": "2020CadillacEscalade.png",
+  "author": {
+    "$oid": "64470041921bc1a0cedd8205"
+  },
+  "createdAt": {
+    "$date": "2023-04-26T00:44:07.104Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-26T00:44:07.104Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,28 @@
+<%- include('../partials/header.ejs')%>
+    <div class = "content">
+
+        <% if(trades.length>0){%>
+            <% var existingCategories = []; %>
+            <% for(var i= 0; i< categories.length; i++){%>
+            <% existingCategories.push(categories[i].category); %>
+            <h1> <%= categories[i].category %></h1><br><br>
+            <% for(var j= 0; j< trades.length; j++){%>
+            <% if(trades[j].category == categories[i].category){%>
+            <a href="/trades/<%= trades[j].id%>"> <p> <%= trades[j].title %></p><br></a>
+            <%}%>
+            <%}%>
+            <%}%>
+            <% for(var k= 0; k< trades.length; k++){%>
+            <% if(existingCategories.indexOf(trades[k].category) == -1){ %>
+            <% existingCategories.push(trades[k].category); %>
+            <h1> <%= trades[k].category %></h1><br><br>
+            <a href="/trades/<%= trades[k].id%>"> <p> <%= trades[k].title %></p><br></a>
+            <% } %>
+            <% } %>
+            <%} else{ %>
+            <h2>There are no more trades</h2>
+            <%}%>
+
+    </div>
+    <%- include('../partials/footer.ejs')%>
+

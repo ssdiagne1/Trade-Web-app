@@ -1,0 +1,32 @@
+<%- include('../partials/header.ejs')%>
+<div class = "content">
+    <form action = '/trades' method = 'POST'>
+        <table> 
+            <tr>
+                <td><label for="title">Title</label></td>
+                <td><input type="text" id="title" name="title" class = "fixed-width" required></td>
+            </tr>
+            <tr>
+                <td><label for="category">Category</label></td>
+                <td><input type="text" id="category" name="category" class = "fixed-width" required></td>
+            </tr>
+            <tr>
+                <td class = "align-top"><label for="detail">Details</label></td>
+                <td><textarea rows="5" id="detail" name="detail" class = "fixed-width" ></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="status">Status</label></td>
+                <td><input type="text" id="status" name="status" class = "fixed-width" required></td>
+            </tr>
+            <tr>
+                <td><label for="image">Choose an car image:</label></td>
+                <td><input type="file" id="image" name="image" accept="image/png, image/jpeg"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class = "align-right"><button>Submit</button></td>
+            </tr>
+        </table>    
+    </form>
+
+    </div>
+    <%- include('../partials/footer.ejs')%>

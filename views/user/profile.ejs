@@ -1,0 +1,67 @@
+
+<%- include('../partials/header.ejs')%>
+<div class = "content">
+    <h2>Welcome,  <%= user.firstName%> </h2>
+    <%if(trades.length>0){%>
+      <h3>Your Trades</h3>
+      <table id="table">
+          <tr class="tr">
+               <th class="th">Title</th>
+               <th class="th">Category</th>
+               <th class="th">Status</th>
+               <th class="th">Actions</th>
+
+          </tr>
+          <% for(var j= 0; j< trades.length; j++){%>
+               <tr>
+                    <td class="td"><%=trades[j].title%></td>
+                    <td class="td"><%=trades[j].category%></td>
+                    <td class="td"><%=trades[j].status%></td> 
+                    <td class="td"> 
+                    <form>
+                         <button style="margin-left: 50px;width: 50px;"  type = "submit" formmethod = "GET" formaction = "/trades/<%=trades[j].id%>/edit">Update</button>
+                         <button type = "submit" style="width: 50px;" formmethod = "POST" formaction = "/trades/<%=trades[j].id%>?_method=DELETE">Delete</button>
+                    </form>
+                    </td>   
+               </tr>
+           <%}%>  
+          
+      </table>
+    <% }else{%>
+          <h3>Your have no trades</h3>
+    <% }%>
+
+    <% if (watchlist.length > 0) { %>
+     <h3>Your trade watch list</h3>
+     <table id="table">
+       <tr class="tr">
+         <th class="th">Title</th>
+         <th class="th">Category</th>
+         <th class="th">Status</th>
+         <th class="th">Actions</th>
+       </tr>
+       <% for (let i = 0; i < watchlist.length; i++) { %>
+         <% const trade = watchlist[i]; %>
+         <tr>
+           <td class="td"><%= trade.title %></td>
+           <td class="td"><%= trade.category %></td>
+           <td class="td"><%= trade.status %></td>
+           <td class="td">
+             <form>
+               <button type="submit" class="btn btn-unwatch" formmethod = "POST" formaction="/trades/<%= trade._id %>?_method=DELETE">Unwatch</button>
+             </form>
+           </td>
+         </tr>
+       <% } %>
+     </table>
+   <% } else { %>
+     <h3>You are not watching any trades</h3>
+   <% } %>
+   
+   
+    
+        
+
+
+    </div>
+    <%- include('../partials/footer.ejs')%>
